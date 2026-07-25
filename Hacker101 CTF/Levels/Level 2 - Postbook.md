@@ -85,8 +85,6 @@ Try to do the same but IDOR to another one’s `/page/edit` and then place the X
 2. IDOR to `id=1` - which means the edit page of the page which `id` is 1
 3. Flag exposed
 
-!image.png
-
 `#6 attempt`
 
 Try to intercept the `delete-post` request and do it on someone else's 
@@ -128,8 +126,6 @@ So I figured the answer is 945 I
 
 Flag exposed
 
-!image.png
-
 `#8 attempt`
 
 The hint saying *"The person with username 'user' has a very easy password..."* 
@@ -142,8 +138,6 @@ The common passwords that come to my mind are
 - `admin`
 
 Tried first one. flag exposed
-
-!image.png
 
 `#9 attempt`
 
@@ -161,6 +155,7 @@ Steps taken:
 6. Search “Flag”’
 7. Flag exposed
 
-!image.png
+<img width="703" height="114" alt="image" src="https://github.com/user-attachments/assets/cbb837bb-03d5-4693-9cd8-595dc1c42ed4" />
+
 
 # Completed CTF points that are enough to make me eligible for private programs
