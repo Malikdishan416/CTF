@@ -1,8 +1,6 @@
 > 4 points - Hard difficulty, skills - Web, Crypto
 > 
 
-https://b781bd4d02d0f0cc901e8b2ae35a1818.ctf.hacker101.com/
-
 ---
 
 # 11/6/2026
