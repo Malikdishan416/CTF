@@ -17,7 +17,7 @@ steps taken
 2. Change the post `id` to something else
 3. Flag found
 
-!image.png
+<img width="762" height="116" alt="image" src="https://github.com/user-attachments/assets/376be5f7-9837-48fc-abb4-37e463d3a877" />
 
 `#2nd attempt`
 
