@@ -197,3 +197,45 @@ Steps:
     - See if it reads files
     - Or body: `{{7*7}}` — template injection
     - Or body: `${7*7}` — SSTI
+  
+      7. **Try path injection in the page body:**
+    - Create a page with body: `../../../etc/passwd`
+    - See if it reads files
+    - Or body: `{{7*7}}` — template injection
+    - Or body: `${7*7}` — SSTI
+    
+    ---
+    
+    # 26/07/2026
+    
+    ### 2nd flag - last one
+    
+    Hints : 
+    
+    - Sometimes a given input will affect more than one page
+    - The bug you are looking for doesn't exist in the most obvious place this input is shown
+
+“…input will affect more than one page” could mean one endpoint would lead to several results, like one command or click would open another page. This must be a mistake or but or technical issue if i make it crash with 2 page loads. 
+
+# USER INPUT ALMOST NEVER HAS ONLY ONE DESTINATION!!
+
+Attempt steps
+
+1. Create or open a page
+2. In the title box, insert this HTML script `<a href="/page/6">Click me</a>`
+3. Click ‘save’
+
+Ignore the title being bald, the script does not work in a title section anyway. Consider the fact that the homepage renders the title differently because it became part of a hyperlink
+
+1. Click ‘home’
+2. Flag found
+
+   <img width="721" height="313" alt="image" src="https://github.com/user-attachments/assets/dcec646f-2c7a-4516-b2eb-c06bb34fbb3e" />
+
+
+#### Future Hunting Rule
+
+> When a hint or observation suggests that data is reused, instead of focusing on payloads — start tracing where the data flows through the application. Different rendering contexts often create different vulnerabilities.
+> 
+
+---
